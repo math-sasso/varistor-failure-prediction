@@ -6,7 +6,6 @@ Last Update on Thu June 30 11:45:00 2020
 @authors: clneto e msasso
 """
 
-import visa
 import numpy as np
 from struct import unpack
 import matplotlib.pyplot as plt
