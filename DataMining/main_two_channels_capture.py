@@ -53,7 +53,7 @@ def pre_experimemnt_information(dict_results_row, Identificador_varistor=None):
     V_oper_nominal = input_number('Qual a tensão de operação nominal em [V]? ')
     dict_results_row['V_oper_nominal'] = V_oper_nominal
     # I_surto_nom
-    I_surto_nom = input_number('Qual a corrente de surto nominal em [uA]? ')
+    I_surto_nom = input_number('Qual a corrente de surto nominal em [KA]? ')
     dict_results_row['I_surto_nom'] = I_surto_nom
     # Fase_nom
     Fase_nom = input_phase('Qual a fase nominal em [graus]? ')

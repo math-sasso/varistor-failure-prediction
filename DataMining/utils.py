@@ -76,7 +76,7 @@ def save_exploratory_results(dict_results_row):
         exploratory_results = pd.read_csv('./exploratory_results.csv')
     except:
         exploratory_results = pd.DataFrame(columns=['Identificador_varistor', 'Polaridade','I_fuga_pre[uA]', 'Temp_terminal_pre[Celcius]', 
-        'V_oper[V]', 'V_oper_nominal[V]', 'I_surto_nom[uA]', 'Fase_nom[graus]', 'Nome_Arquivo_Medidas', 'I_fuga_pos[uA]',
+        'V_oper[V]', 'V_oper_nominal[V]', 'I_surto_nom[KA]', 'Fase_nom[graus]', 'Nome_Arquivo_Medidas', 'I_fuga_pos[uA]',
         'Temp_terminal_pos[Celcius]', 'Temp_ambiente_pos[Celcius]', 'V_oper_pos[V]'])
     exploratory_results = exploratory_results.append(pd.Series(list_results_row, index=exploratory_results.columns), ignore_index=True)
     exploratory_results.to_csv('./exploratory_results.csv', index=False)
